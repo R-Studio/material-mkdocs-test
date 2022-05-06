@@ -33,7 +33,7 @@ markdown_extensions:
   - meta
 extra:
   social:
-    - icon: fontawesome/brands/twitter 
+    - icon: fontawesome/brands/github 
       link: https://github.com/onzack
       name: ONZACK on GitHub
 extra_css:
