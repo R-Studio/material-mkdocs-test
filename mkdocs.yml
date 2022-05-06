@@ -70,3 +70,6 @@ extra:
 # CSS customization
 extra_css:
   - stylesheets/extra.css
+
+nav:
+  - Home: index.md
