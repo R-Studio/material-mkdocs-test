@@ -24,13 +24,15 @@ theme:
     - search.suggest
     - search.highlight
     - search.share
-plugins:
-  - tags
+#plugins: # I think there is a bug (if you enable this plugin, the search bar disappears)
+#  - tags
 #markdown_extensions:
 #  - meta
 extra:
   social:
     - icon: fontawesome/brands/twitter 
       link: https://github.com/onzack
+      name: ONZACK on GitHub
 extra_css:
   - stylesheets/extra.css
+repo_url: https://github.com/R-Studio/material-mkdocs-test
