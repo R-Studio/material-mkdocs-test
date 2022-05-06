@@ -2,10 +2,10 @@
     max-width: 1800px;
   }
 
-/* Hide Git repo */
+/* Hide Git repo 
 .md-source {
   display: none;
-}
+}*/
 
 .md-header__source {
   display: none;
