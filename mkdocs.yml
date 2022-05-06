@@ -3,3 +3,5 @@ theme:
   name: material
   features:
     - navigation.indexes
+extra_css:
+  - extra.css
