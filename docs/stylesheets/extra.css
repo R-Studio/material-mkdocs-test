@@ -2,7 +2,7 @@
     max-width: 1800px;
   }
 
-[data-md-color-scheme="light"] {
+/* [data-md-color-scheme="light"] {
   --md-primary-fg-color:        #1b1b22;
   --md-primary-fg-color--light: #ffffff;
   --md-primary-fg-color--dark:  #1b1b22;
@@ -14,4 +14,4 @@
   --md-primary-fg-color--light: #ffffff;
   --md-primary-fg-color--dark:  #1b1b22;
   --md-default-bg-color:        #1b1b22;
-}
+}*/ 
