@@ -2,6 +2,7 @@
     max-width: 1800px;
   }
 
+/* Hide Git repo */
 .md-source {
   display: none;
 }
