@@ -9,7 +9,7 @@
   --md-default-bg-color:        #ffffff;
 }
 
-[data-md-color-scheme="light"] {
+[data-md-color-scheme="dark"] {
   --md-primary-fg-color:        #d67770;
   --md-primary-fg-color--light: #ffffff;
   --md-primary-fg-color--dark:  #1b1b22;
