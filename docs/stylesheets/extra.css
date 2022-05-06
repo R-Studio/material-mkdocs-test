@@ -2,8 +2,16 @@
     max-width: 1800px;
   }
 
-:root {
+[data-md-color-scheme="light"] {
+  --md-primary-fg-color:        #1b1b22;
+  --md-primary-fg-color--light: #ffffff;
+  --md-primary-fg-color--dark:  #1b1b22;
+  --md-default-bg-color:        #ffffff;
+}
+
+[data-md-color-scheme="light"] {
   --md-primary-fg-color:        #d67770;
   --md-primary-fg-color--light: #ffffff;
   --md-primary-fg-color--dark:  #1b1b22;
+  --md-default-bg-color:        #1b1b22;
 }
