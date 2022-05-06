@@ -47,6 +47,7 @@ theme:
     - search.highlight
     - search.share
     - search.suggest
+    - pymdownx.smartsymbols
 
 # Plugins
 plugins: 
