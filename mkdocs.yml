@@ -20,5 +20,9 @@ theme:
         name: Switch to light mode
   features:
     - navigation.indexes
+    - navigation.top
+    - search.suggest
+    - search.highlight
+    - search.share
 extra_css:
   - stylesheets/extra.css
