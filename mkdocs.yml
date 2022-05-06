@@ -29,9 +29,9 @@ plugins:
   - tags
   - git-revision-date-localized:
       enable_creation_date: true
-#  - tags # I think there is a bug (if you enable this plugin, the search bar disappears)
-#markdown_extensions:
-#  - meta
+  - tags # I think there is a bug (if you enable this plugin, the search bar disappears)
+markdown_extensions:
+  - meta
 extra:
   social:
     - icon: fontawesome/brands/twitter 
