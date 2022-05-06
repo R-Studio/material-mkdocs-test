@@ -42,7 +42,6 @@ theme:
         name: Switch to light mode
   features:
     - navigation.indexes
-    - navigation.tabs
     - navigation.top
     - navigation.tracking
     - search.highlight
@@ -70,7 +69,3 @@ extra:
 # CSS customization
 extra_css:
   - stylesheets/extra.css
-
-nav:
-  - Home: index.md
-  - TestFolder: TestFolder/*
