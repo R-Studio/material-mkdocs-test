@@ -4,4 +4,4 @@ theme:
   features:
     - navigation.indexes
 extra_css:
-  - extra.css
+  - stylesheets/extra.css
