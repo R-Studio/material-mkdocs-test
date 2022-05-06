@@ -1,1 +1,1 @@
-# Hello my friend MD this is a very long title with some characters () ! :
+# Hello my friend MD this is a very long title with some characters ()
