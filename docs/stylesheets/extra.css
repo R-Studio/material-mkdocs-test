@@ -7,6 +7,10 @@
   display: none;
 }
 
+.md-header__source {
+  display: none;
+}
+
 /* [data-md-color-scheme="light"] {
   --md-primary-fg-color:        #1b1b22;
   --md-primary-fg-color--light: #ffffff;
