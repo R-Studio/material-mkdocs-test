@@ -1,7 +1,9 @@
+/* make side wider */
 .md-grid {
     max-width: 1800px;
   }
 
+/* remove Git repo infobox in the top right corner */
 .md-header__source {
   display: none;
 }
@@ -19,10 +21,3 @@
   --md-primary-fg-color--dark:  #1b1b22;
   --md-default-bg-color:        #1b1b22;
 }*/ 
-
-
-:root {
-  --md-default-bg-color:        #1e1e1e;
-}
-
-
