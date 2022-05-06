@@ -1,7 +1,3 @@
 site_name: My Docs
 theme:
   name: material
-
-theme:
-  features:
-    - navigation.indexes
