@@ -10,7 +10,7 @@ You will like those projects!
 
 ---
 
-© vs (c)
+© vs (c) -> --> 
 
 # h1 Heading 8-)
 ## h2 Heading
