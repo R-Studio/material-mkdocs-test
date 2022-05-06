@@ -8,6 +8,8 @@ Kubernetes internal communication (pods in different namespaces):
 `<KUBERNETES_SERVICE_NAME>.<KUBERNETES_NAMESPACE>:<APPLICATION_PORT>`
 
 
+![](logo.png)
+
 ## Resources
 ### [Secrets](https://kubernetes.io/docs/concepts/configuration/secret/)
 _A Secret is an object that contains a small amount of sensitive data such as a password, a token, or a key. Such information might otherwise be put in a [Pod](https://kubernetes.io/docs/concepts/workloads/pods/) specification or in a [container image](https://kubernetes.io/docs/reference/glossary/?all=true#term-image). Using a Secret means that you don't need to include confidential data in your application code._
