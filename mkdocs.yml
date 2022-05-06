@@ -14,8 +14,7 @@ copyright: Copyright &copy; 2022 Robin Hermann
 
 # Configuration
 theme:
-  name: null
-  custom_dir: mkdocs-material/material
+  name: material
 
   # Static files
   static_templates:
