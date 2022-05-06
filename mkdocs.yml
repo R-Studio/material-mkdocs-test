@@ -24,8 +24,10 @@ theme:
     - search.suggest
     - search.highlight
     - search.share
-#plugins: # I think there is a bug (if you enable this plugin, the search bar disappears)
-#  - tags
+plugins: 
+  - git-revision-date-localized:
+      enable_creation_date: true
+#  - tags # I think there is a bug (if you enable this plugin, the search bar disappears)
 #markdown_extensions:
 #  - meta
 extra:
