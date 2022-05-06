@@ -1,6 +1,29 @@
-site_name: My Docs
+# Project information
+site_name: ONZACK Docs
+site_author: ONZACK AG
+site_description: >-
+  This is only for testing Material for MkDocs.
+  Thanks to Squidfunk for this awesome project!
+
+# Repository
+repo_url: https://github.com/R-Studio/material-mkdocs-test
+repo_name: ONZACK Docs
+
+# Copyright
+copyright: Copyright &copy; 2022 Robin Hermann
+
+# Configuration
 theme:
-  name: material
+  name: null
+  custom_dir: !ENV [THEME_DIR, "material"]
+
+  # Static files
+  static_templates:
+    - 404.html
+
+  # Don't include MkDocs' JavaScript
+  include_search_page: false
+  search_index_only: true
   logo: assets/logo.png
   favicon: assets/logo.png
   palette: 
@@ -20,24 +43,31 @@ theme:
         name: Switch to light mode
   features:
     - navigation.indexes
+    - navigation.tabs
     - navigation.top
-    - search.suggest
+    - navigation.tracking
     - search.highlight
     - search.share
-    - navigation.instant
+    - search.suggest
+
+# Plugins
 plugins: 
   - search
   - tags
   - git-revision-date-localized:
       enable_creation_date: true
+
+# Extensions
 markdown_extensions:
   - meta
+
+# Customization
 extra:
   social:
     - icon: fontawesome/brands/github 
       link: https://github.com/onzack
       name: ONZACK on GitHub
+
+# CSS customization
 extra_css:
   - stylesheets/extra.css
-repo_url: https://github.com/R-Studio/material-mkdocs-test
-repo_name: ONZACK Docs
