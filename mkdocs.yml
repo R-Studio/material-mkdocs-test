@@ -24,9 +24,13 @@ theme:
     - search.suggest
     - search.highlight
     - search.share
-#plugins:
-#  - tags
-markdown_extensions:
-  - meta
+plugins:
+  - tags
+#markdown_extensions:
+#  - meta
+extra:
+  social:
+    - icon: fontawesome/brands/twitter 
+      link: https://github.com/onzack
 extra_css:
   - stylesheets/extra.css
