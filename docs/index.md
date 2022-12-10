@@ -1,5 +1,5 @@
 # Welcome to MkDocs
-*This is only a test for testing MkDocs.*
+*This is only a test for testing MkDocs.* NICE
 
 For full documentation visit [mkdocs.org](https://www.mkdocs.org).
 
