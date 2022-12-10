@@ -23,8 +23,13 @@
 }*/ 
 
 
+/* disable scrollbar because it looks not great with the header */
+::-webkit-scrollbar {
+  display: none;
+}
 
 /* custom scrollbar */
+/*
 ::-webkit-scrollbar {
   width: 20px;
 }
@@ -43,3 +48,4 @@
 ::-webkit-scrollbar-thumb:hover {
   background-color: #a8bbbf;
 }
+*/
