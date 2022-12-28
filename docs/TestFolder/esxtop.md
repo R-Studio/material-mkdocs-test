@@ -1,8 +1,3 @@
----
-title: ESXTOP (vSphere 6)
-permalink: /ESXTOP_(vSphere_6)/
----
-
 ![Esxtop.jpg](Esxtop.jpg "Esxtop.jpg") ''Viele von euch kennen
 wahrscheinlich unter Linux den Befehl/das Tool *top*. Auf den ESXi-Hosts
 von VMware gibt es einen ähnlichen Befehl Namens *ESXTOP*. Dieser wurde
