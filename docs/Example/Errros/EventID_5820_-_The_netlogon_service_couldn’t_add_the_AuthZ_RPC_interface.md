@@ -1,3 +1,7 @@
+---
+icon: :octicons-alert-24:
+---
+
 ## Error
 
 **EventID 5820: The Netlogon service could not add the AuthZ RPC
