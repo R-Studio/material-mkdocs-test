@@ -1,5 +1,5 @@
 ---
-icon: :octicons-alert-24:
+icon: material/octicons-alert-24
 ---
 
 ## Error
