@@ -1,4 +1,4 @@
-![../assets/images/in_markdown/00-influxdb_downsampling.png](00-influxdb_downsampling.png "00-influxdb_downsampling.png")
+![00-influxdb_downsampling.png](../assets/images/in_markdown/00-influxdb_downsampling.png "00-influxdb_downsampling.png")
 
 The following downsampling examples calculates **every hour the mean value (for an two hour window) of every series and writes in a new Influx Database** respectively Influx bucket.
 
