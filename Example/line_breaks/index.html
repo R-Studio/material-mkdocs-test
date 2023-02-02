@@ -1,0 +1,2093 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="This is only for testing Material for MkDocs. Thanks to Squidfunk for this awesome project!">
+      
+      
+        <meta name="author" content="ONZACK AG">
+      
+      
+      
+        <link rel="prev" href="../code_highlighting/">
+      
+      
+        <link rel="next" href="../Errros/EventID_5820_-_The_netlogon_service_couldn%E2%80%99t_add_the_AuthZ_RPC_interface/">
+      
+      <link rel="icon" href="../../assets/logo.png">
+      <meta name="generator" content="mkdocs-1.4.2, mkdocs-material-9.0.10">
+    
+    
+      
+        <title>Line breaks - ONZACK Docs</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.0d440cfe.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.2505c338.min.css">
+      
+      
+
+    
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../../stylesheets/extra.css">
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="deep-orange" data-md-color-accent="deep-orange">
+  
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&"object"==typeof palette.color)for(var key of Object.keys(palette.color))document.body.setAttribute("data-md-color-"+key,palette.color[key])</script>
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#offnen-von-gewissen-windows-fenster-mit-ctrlr-ausfuhren" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../.." title="ONZACK Docs" class="md-header__button md-logo" aria-label="ONZACK Docs" data-md-component="logo">
+      
+  <img src="../../assets/logo.png" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            ONZACK Docs
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Line breaks
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      <form class="md-header__option" data-md-component="palette">
+        
+          
+          <input class="md-option" data-md-color-media="(prefers-color-scheme: light)" data-md-color-scheme="default" data-md-color-primary="deep-orange" data-md-color-accent="deep-orange"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_1">
+          
+            <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_2" hidden>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17 6H7c-3.31 0-6 2.69-6 6s2.69 6 6 6h10c3.31 0 6-2.69 6-6s-2.69-6-6-6zm0 10H7c-2.21 0-4-1.79-4-4s1.79-4 4-4h10c2.21 0 4 1.79 4 4s-1.79 4-4 4zM7 9c-1.66 0-3 1.34-3 3s1.34 3 3 3 3-1.34 3-3-1.34-3-3-3z"/></svg>
+            </label>
+          
+        
+          
+          <input class="md-option" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-scheme="slate" data-md-color-primary="deep-orange" data-md-color-accent="deep-orange"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_2">
+          
+            <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_1" hidden>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17 7H7a5 5 0 0 0-5 5 5 5 0 0 0 5 5h10a5 5 0 0 0 5-5 5 5 0 0 0-5-5m0 8a3 3 0 0 1-3-3 3 3 0 0 1 3-3 3 3 0 0 1 3 3 3 3 0 0 1-3 3Z"/></svg>
+            </label>
+          
+        
+      </form>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+          <a href="javascript:void(0)" class="md-search__icon md-icon" title="Share" aria-label="Share" data-clipboard data-clipboard-text="" data-md-component="search-share" tabindex="-1">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M18 16.08c-.76 0-1.44.3-1.96.77L8.91 12.7c.05-.23.09-.46.09-.7 0-.24-.04-.47-.09-.7l7.05-4.11c.54.5 1.25.81 2.04.81a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3c0 .24.04.47.09.7L8.04 9.81C7.5 9.31 6.79 9 6 9a3 3 0 0 0-3 3 3 3 0 0 0 3 3c.79 0 1.5-.31 2.04-.81l7.12 4.15c-.05.21-.08.43-.08.66 0 1.61 1.31 2.91 2.92 2.91 1.61 0 2.92-1.3 2.92-2.91A2.92 2.92 0 0 0 18 16.08Z"/></svg>
+          </a>
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/R-Studio/material-mkdocs-test" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.2.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    ONZACK Docs
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+            
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-tabs__inner md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+
+
+  <li class="md-tabs__item">
+    <a href="../.." class="md-tabs__link">
+      Welcome to MkDocs
+    </a>
+  </li>
+
+      
+        
+  
+  
+
+
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../Container/K8s/" class="md-tabs__link">
+        Container
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+    
+  
+
+
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../InfluxDB%202.x%20Task%20Downsampling/" class="md-tabs__link md-tabs__link--active">
+        Example
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+
+
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../Linux/testfile/" class="md-tabs__link">
+        Linux
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+
+
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../Windows/testfile/" class="md-tabs__link">
+        Windows
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+
+
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../others/CheatSheet/" class="md-tabs__link">
+        Others
+      </a>
+    </li>
+  
+
+      
+    </ul>
+  </div>
+</nav>
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="ONZACK Docs" class="md-nav__button md-logo" aria-label="ONZACK Docs" data-md-component="logo">
+      
+  <img src="../../assets/logo.png" alt="logo">
+
+    </a>
+    ONZACK Docs
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/R-Studio/material-mkdocs-test" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.2.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    ONZACK Docs
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        Welcome to MkDocs
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" >
+      
+      
+        
+          
+        
+          
+        
+      
+      
+        <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
+          Container
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+        <label class="md-nav__title" for="__nav_2">
+          <span class="md-nav__icon md-icon"></span>
+          Container
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Container/K8s/" class="md-nav__link">
+        Kubernetes
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_2" >
+      
+      
+        
+          
+            
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+      
+        
+        
+        <div class="md-nav__link md-nav__link--index ">
+          <a href="../../Container/TestFolder/">TestFolder</a>
+          
+            <label for="__nav_2_2">
+              <span class="md-nav__icon md-icon"></span>
+            </label>
+          
+        </div>
+      
+      <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_2_label" aria-expanded="false">
+        <label class="md-nav__title" for="__nav_2_2">
+          <span class="md-nav__icon md-icon"></span>
+          TestFolder
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Container/TestFolder/Error_EventID_5820_-_The_netlogon_service_couldn%E2%80%99t_add_the_AuthZ_RPC_interface/" class="md-nav__link">
+        Error EventID 5820   The netlogon service couldn’t add the AuthZ RPC interface
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Container/TestFolder/esxtop/" class="md-nav__link">
+        Esxtop
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Container/TestFolder/testfile/" class="md-nav__link">
+        h1 testfile
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Container/TestFolder/v2_Error_EventID_5820_-_The_netlogon_service_couldn%E2%80%99t_add_the_AuthZ_RPC_interface/" class="md-nav__link">
+        v2 Error EventID 5820   The netlogon service couldn’t add the AuthZ RPC interface
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_2_6" >
+      
+      
+        
+          
+            
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+      
+        
+        
+        <div class="md-nav__link md-nav__link--index ">
+          <a href="../../Container/TestFolder/Subfolder/">Subfolder</a>
+          
+            <label for="__nav_2_2_6">
+              <span class="md-nav__icon md-icon"></span>
+            </label>
+          
+        </div>
+      
+      <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_2_2_6_label" aria-expanded="false">
+        <label class="md-nav__title" for="__nav_2_2_6">
+          <span class="md-nav__icon md-icon"></span>
+          Subfolder
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Container/TestFolder/Subfolder/Error%20-%20Test%20Error%20with%20long%20text%20and%20some%20characters%20%28windows%20error%2037%29/" class="md-nav__link">
+        Error   Test Error with long text and some characters (windows error 37)
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Container/TestFolder/Subfolder/Windows%20could%20not%20parse%20or%20process%20the%20unattend%20answer%20file%20for%20pass%20%28specialize%29%20copy%202/" class="md-nav__link">
+        Windows could not parse or process the unattend answer file for pass (specialize) copy 2
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Container/TestFolder/Subfolder/Windows%20could%20not%20parse%20or%20process%20the%20unattend%20answer%20file%20for%20pass%20%28specialize%29%20copy%203/" class="md-nav__link">
+        Windows could not parse or process the unattend answer file for pass (specialize) copy 3
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Container/TestFolder/Subfolder/Windows%20could%20not%20parse%20or%20process%20the%20unattend%20answer%20file%20for%20pass%20%28specialize%29%20copy%204/" class="md-nav__link">
+        Windows could not parse or process the unattend answer file for pass (specialize) copy 4
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Container/TestFolder/Subfolder/Windows%20could%20not%20parse%20or%20process%20the%20unattend%20answer%20file%20for%20pass%20%28specialize%29%20copy%205/" class="md-nav__link">
+        Windows could not parse or process the unattend answer file for pass (specialize) copy 5
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Container/TestFolder/Subfolder/Windows%20could%20not%20parse%20or%20process%20the%20unattend%20answer%20file%20for%20pass%20%28specialize%29%20copy%206/" class="md-nav__link">
+        Windows could not parse or process the unattend answer file for pass (specialize) copy 6
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Container/TestFolder/Subfolder/Windows%20could%20not%20parse%20or%20process%20the%20unattend%20answer%20file%20for%20pass%20%28specialize%29%20copy/" class="md-nav__link">
+        Windows could not parse or process the unattend answer file for pass (specialize) copy
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Container/TestFolder/Subfolder/Windows%20could%20not%20parse%20or%20process%20the%20unattend%20answer%20file%20for%20pass%20%28specialize%29/" class="md-nav__link">
+        Windows could not parse or process the unattend answer file for pass (specialize)
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_2_6_10" >
+      
+      
+        
+          
+        
+          
+        
+      
+      
+        <label class="md-nav__link" for="__nav_2_2_6_10" id="__nav_2_2_6_10_label" tabindex="0">
+          SubSubfolder
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" data-md-level="4" aria-labelledby="__nav_2_2_6_10_label" aria-expanded="false">
+        <label class="md-nav__title" for="__nav_2_2_6_10">
+          <span class="md-nav__icon md-icon"></span>
+          SubSubfolder
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Container/TestFolder/Subfolder/SubSubfolder/MarkDownname%20i%20have%20whitespaces/" class="md-nav__link">
+        Hello my friend MD / this is a very long title with some characters ()
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Container/TestFolder/Subfolder/SubSubfolder/test/" class="md-nav__link">
+        SubSubfolder Title!
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+    
+  
+  
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" checked>
+      
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+      
+        <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+          Example
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="true">
+        <label class="md-nav__title" for="__nav_3">
+          <span class="md-nav__icon md-icon"></span>
+          Example
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../InfluxDB%202.x%20Task%20Downsampling/" class="md-nav__link">
+        InfluxDB 2.x Task Downsampling
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Windows.edb_%28Datei%29/" class="md-nav__link">
+        Windows.edb (Datei)
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Windows_Deduplikation/" class="md-nav__link">
+        Dedup
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Windows_Dienst_per_CMD-Befehl_l%C3%B6schen/" class="md-nav__link">
+        Windows Dienst per CMD Befehl löschen
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../code_highlighting/" class="md-nav__link">
+        Code highlighting
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+    
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          Line breaks
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        Line breaks
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#offnen-von-gewissen-windows-fenster-mit-ctrlr-ausfuhren" class="md-nav__link">
+    Öffnen von gewissen Windows Fenster mit Ctrl+R (Ausführen
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#nutzliche-befehle" class="md-nav__link">
+    Nützliche Befehle
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_7" >
+      
+      
+        
+          
+        
+          
+        
+      
+      
+        <label class="md-nav__link" for="__nav_3_7" id="__nav_3_7_label" tabindex="0">
+          Errros
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_7_label" aria-expanded="false">
+        <label class="md-nav__title" for="__nav_3_7">
+          <span class="md-nav__icon md-icon"></span>
+          Errros
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Errros/EventID_5820_-_The_netlogon_service_couldn%E2%80%99t_add_the_AuthZ_RPC_interface/" class="md-nav__link">
+        EventID 5820   The netlogon service couldn’t add the AuthZ RPC interface
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Errros/Invoke-RestMethod_-_Bad_request_%28400%29/" class="md-nav__link">
+        Invoke RestMethod   Bad request (400)
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" >
+      
+      
+        
+          
+        
+      
+      
+        <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="0">
+          Linux
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+        <label class="md-nav__title" for="__nav_4">
+          <span class="md-nav__icon md-icon"></span>
+          Linux
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Linux/testfile/" class="md-nav__link">
+        This file only exists for not removing the folder `Windows`
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" >
+      
+      
+        
+          
+        
+      
+      
+        <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="0">
+          Windows
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
+        <label class="md-nav__title" for="__nav_5">
+          <span class="md-nav__icon md-icon"></span>
+          Windows
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Windows/testfile/" class="md-nav__link">
+        This file only exists for not removing the folder `Windows`
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6" >
+      
+      
+        
+          
+        
+          
+        
+      
+      
+        <label class="md-nav__link" for="__nav_6" id="__nav_6_label" tabindex="0">
+          Others
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="false">
+        <label class="md-nav__title" for="__nav_6">
+          <span class="md-nav__icon md-icon"></span>
+          Others
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../others/CheatSheet/" class="md-nav__link">
+        CheatSheet
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../others/checkbox/" class="md-nav__link">
+        Test Checkboxes
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#offnen-von-gewissen-windows-fenster-mit-ctrlr-ausfuhren" class="md-nav__link">
+    Öffnen von gewissen Windows Fenster mit Ctrl+R (Ausführen
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#nutzliche-befehle" class="md-nav__link">
+    Nützliche Befehle
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+  
+
+
+
+  
+  
+
+
+
+  <h1>Line breaks</h1>
+
+<h2 id="offnen-von-gewissen-windows-fenster-mit-ctrlr-ausfuhren">Öffnen von gewissen Windows Fenster mit Ctrl+R (Ausführen</h2>
+<p><strong>Software</strong> = appwiz.cpl</p>
+<h2 id="nutzliche-befehle">Nützliche Befehle</h2>
+<p><strong>NTP-Status anzeigen:</strong> w32tm /query /status<br />
+<strong>NTP-Konfiguration anzeigen:</strong> w32tm /query /configuration<br />
+<strong>Windows Benutzer Cache Passwörter ändern/löschen:</strong> rundll32.exe keymgr.dll,KRShowKeyMgr<br />
+<strong>Windows 10 Ultimatives Leistungsprofil freischalten:</strong> powercfg -duplicatescheme   e9a42b02-d5df-448d-aa00-03f14749eb61
+<strong>Aktivierung Disk Monitoring im Taskmanager (Server-OS):</strong> diskperf -y
+<strong>Suche von Dateien mit "last modified" vor einem Tag:</strong> forfiles /P <Path> /S /D -1
+<strong>Alle Netzwerkeinstellungen &amp; Adapter zurücksetzen/löschen:</strong> netcfg -d
+<strong>Datei schnell suchen:</strong> dir "\\&lt;filename.type>" /s
+<strong>WLAN Passwort im Klartext anzeigen:</strong> netsh wlan show profile <WLAN-SSID/Name> key=clear
+<strong>Symlinks erstellen (Mehr Informationen<a href="https://www.giga.de/downloads/windows-10/tipps/symlinks-in-windows-erstellen-mit-mklink-so-gehts/">1</a>):</strong> mklink /d "D:\<YourMountPath>" "\\192.168.1.120\<RemoteDirectory>\"
+<strong>Suche nach Dateiinhalten rekursiv in allen Subfoldern:</strong> findstr /S YOUR_SEARCH_STRING *</p>
+<table>
+<thead>
+<tr>
+<th>Befehl</th>
+<th>Beschreibung und Erklärung des Befehls</th>
+<th>Betriebssysteme</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>ASSOC</strong></td>
+<td>Zeigt Dateierweitungszuordnungen an bzw. ändert sie</td>
+<td>XP/Vista/7</td>
+</tr>
+<tr>
+<td><strong>AT</strong></td>
+<td>Mit AT können Befehle oder Programme zu einem bestimmten Termin gestartet werden. Diese werden dann in “Geplante Tasks” eingetragen.</td>
+<td>XP/Vista/7</td>
+</tr>
+<tr>
+<td><strong>ATTRIB</strong></td>
+<td>Zeigt Dateiattribute an bzw. ändert sie</td>
+<td>XP/Vista/7</td>
+</tr>
+<tr>
+<td><strong>cacls</strong></td>
+<td>ändert Datei ACLs (Access Control List) oder zeigt sie an</td>
+<td>XP/Vista/7</td>
+</tr>
+<tr>
+<td><strong>call</strong></td>
+<td>ruft eine Batchdatei von einer anderen aus auf</td>
+<td>XP/Vista/7</td>
+</tr>
+<tr>
+<td><strong>cd</strong></td>
+<td>in ein anderes Verzeichnis wechslen cd \ wechselt in das root Verzeichnis</td>
+<td>XP/Vista/7</td>
+</tr>
+<tr>
+<td><strong>chcp</strong></td>
+<td>wechselt die aktuelle Codepage oder zeigt deren Nummer an</td>
+<td>XP/Vista/7</td>
+</tr>
+<tr>
+<td><strong>chdir</strong></td>
+<td>wechselt das Verzeichnis oder zeigt dessen Namen an</td>
+<td>XP/Vista/7</td>
+</tr>
+<tr>
+<td><strong>chkdsk</strong></td>
+<td>Datenträger überprüfen</td>
+<td>XP/Vista/7</td>
+</tr>
+<tr>
+<td><strong>chkntfs</strong></td>
+<td>Überprüfung des Laufwerks beim Start anzeigen, ändern</td>
+<td>XP/Vista/7</td>
+</tr>
+<tr>
+<td><strong>choice</strong></td>
+<td>Benutzer können Elemente aus einer Auswahlliste auswählen</td>
+<td>7</td>
+</tr>
+<tr>
+<td><strong>cipher</strong></td>
+<td>Verschlüsselung von Verzeichnissen (NTFS-Partition) anzeigen oder ermöglichen</td>
+<td>XP/Vista/7</td>
+</tr>
+<tr>
+<td><strong>cls</strong></td>
+<td>Bildschirminhalt löschen</td>
+<td>XP/Vista/7</td>
+</tr>
+<tr>
+<td><strong>cmstp</strong></td>
+<td>Profilinstallation für den Verbindungs-Manager</td>
+<td>XP/Vista/7</td>
+</tr>
+<tr>
+<td><strong>color</strong></td>
+<td>Farben der Konsole ändern</td>
+<td>XP/Vista/7</td>
+</tr>
+<tr>
+<td><strong>comp</strong></td>
+<td>vergleicht den Inhalt von Dateien</td>
+<td>XP/Vista/7</td>
+</tr>
+<tr>
+<td><strong>compact</strong></td>
+<td>anzeigen oder ändern der Komprimierung von Dateien (ntfs)</td>
+<td>XP/Vista/7</td>
+</tr>
+<tr>
+<td><strong>convert</strong></td>
+<td>konvertiert fat Laufwerke in NTFS</td>
+<td>XP/Vista/7</td>
+</tr>
+<tr>
+<td><strong>copy</strong></td>
+<td>kopieren von Dateien besser geeignet für Kopiervorgänge ist der Befehl:xcopy</td>
+<td>XP/Vista/7</td>
+</tr>
+<tr>
+<td><strong>cscript</strong></td>
+<td>startet den Scripting Host: z.B. um die Ausgabe einer .vbs Datei in der Konsole anzuzeigen (nicht in einzelnen Fenstern)</td>
+<td>XP/Vista/7</td>
+</tr>
+<tr>
+<td><strong>date</strong></td>
+<td>zeigt das aktuelle datum und fragt nach einem neuen</td>
+<td>XP/Vista/7</td>
+</tr>
+<tr>
+<td><strong>defrag</strong></td>
+<td>defragmentieren von Laufwerken</td>
+<td>XP/Vista/7</td>
+</tr>
+<tr>
+<td><strong>del</strong></td>
+<td>löschen von Dateien (keine Ordner</td>
+<td>)</td>
+</tr>
+<tr>
+<td><strong>dir</strong></td>
+<td>zeigt den Verzeichnisinhalt</td>
+<td>XP/Vista/7</td>
+</tr>
+<tr>
+<td><strong>diskcomp</strong></td>
+<td>vergleicht den Inhalt 2er Disketten</td>
+<td>XP/Vista/7</td>
+</tr>
+<tr>
+<td><strong>diskcopy</strong></td>
+<td>kopiert eine Diskette auf eine andere</td>
+<td>XP/Vista/7</td>
+</tr>
+<tr>
+<td><strong>DiskPart</strong></td>
+<td>Datenträgerverwaltung aus der Konsole</td>
+<td>XP/Vista/7</td>
+</tr>
+<tr>
+<td><strong>doskey</strong></td>
+<td>ist verantwortlich für das Merken von bereits eingegebenen Befehle in der Konsole diese können mit der Pfeil nach oben Taste erneut aufgerufen werden</td>
+<td>XP/Vista/7</td>
+</tr>
+<tr>
+<td><strong>driverquery</strong></td>
+<td>kann installierte Geräte und ihre Eigenschaften anzeigen</td>
+<td>XP/Vista/7</td>
+</tr>
+<tr>
+<td><strong>echo</strong></td>
+<td>zeigt Meldungen in der Konsole an bzw. schaltet die Befehlsanzeige ein oder aus</td>
+<td>XP/Vista/7</td>
+</tr>
+<tr>
+<td><strong>endlocal</strong></td>
+<td>beendet eine mit setlocal gestartete Sitzung (Änderungen in einer Batchdatei werden mit setlocal nur in der Batchdatei angewandt)</td>
+<td>XP/Vista/7</td>
+</tr>
+<tr>
+<td><strong>erase</strong></td>
+<td>löscht eine oder mehrere Dateien</td>
+<td>XP/Vista/7</td>
+</tr>
+<tr>
+<td><strong>eventcreate</strong></td>
+<td>kann Meldungen in das Ereignisprotokoll (Eventlog) schreiben</td>
+<td>XP/Vista/7</td>
+</tr>
+<tr>
+<td><strong>eventquery</strong></td>
+<td>listet Ereignis oder Ereigniseigenschaften aus dem Eventlog (Ereignisprotokoll) (muss mit cscript ausgeführt werden)</td>
+<td>XP</td>
+</tr>
+<tr>
+<td><strong>eventtriggers</strong></td>
+<td>Ereignisauslöser (Eventlog) anzeigen und konfigurieren</td>
+<td>XP</td>
+</tr>
+<tr>
+<td><strong>exit</strong></td>
+<td>beendet cmd.exe oder eine Batchdatei</td>
+<td>XP/Vista/7</td>
+</tr>
+<tr>
+<td><strong>expand</strong></td>
+<td>kompriemierte Dateien entpacken</td>
+<td>XP/Vista/7</td>
+</tr>
+<tr>
+<td><strong>fc</strong></td>
+<td>vergleicht Dateien und zeigt die Unterschiede an</td>
+<td>XP/Vista/7</td>
+</tr>
+<tr>
+<td><strong>find</strong></td>
+<td>sucht in einer oder mehreren Dateien nach einer Zeichenfolge</td>
+<td>XP/Vista/7</td>
+</tr>
+<tr>
+<td><strong>findstr</strong></td>
+<td>sucht nach Zeichenfolgen in Dateien</td>
+<td>XP/Vista/7</td>
+</tr>
+<tr>
+<td><strong>finger</strong></td>
+<td>schaun welcher Benutzer angemeldet ziemlich alter Dienst funktioniert aus Sicherheitsgründen normalerweise nicht mehr</td>
+<td>XP/Vista/7</td>
+</tr>
+<tr>
+<td><strong>for</strong></td>
+<td>for schleife, Befehle anhand von Sätzen (Listen) mehrfach auführen</td>
+<td>XP/Vista/7</td>
+</tr>
+<tr>
+<td><strong>format</strong></td>
+<td>formatiert einen Datenträger</td>
+<td>XP/Vista/7</td>
+</tr>
+<tr>
+<td><strong>fsutil</strong></td>
+<td>Filesystem tunen</td>
+<td>XP/Vista/7</td>
+</tr>
+<tr>
+<td><strong>ftp</strong></td>
+<td>File Transfer Protokal über Command Line files up und downloaden</td>
+<td>XP/Vista/7</td>
+</tr>
+<tr>
+<td><strong>ftype</strong></td>
+<td>zeigt Dateitypen und deren Zuordnung an</td>
+<td>XP/Vista/7</td>
+</tr>
+<tr>
+<td><strong>getmac</strong></td>
+<td>zeigt die Mac-Adressen des Computers an</td>
+<td>XP/Vista/7</td>
+</tr>
+<tr>
+<td><strong>goto</strong></td>
+<td>springt zu einer Marke in einer Batch Datei</td>
+<td>XP/Vista/7</td>
+</tr>
+<tr>
+<td><strong>gpresult</strong></td>
+<td>zeigt aktuell angewandte Gruppenrichtlinien an</td>
+<td>XP/Vista/7</td>
+</tr>
+<tr>
+<td><strong>gpupdate</strong></td>
+<td>aktualisiert Gruppenrichtlinien</td>
+<td>XP/Vista/7</td>
+</tr>
+<tr>
+<td><strong>graftabl</strong></td>
+<td>ermöglicht Windows, Sonderzeichen im Grafikmodus anzuzeigen</td>
+<td>XP/Vista/7</td>
+</tr>
+<tr>
+<td><strong>help</strong></td>
+<td>zeigt einen Überblick über die Windows CMD-Befehle</td>
+<td>XP/Vista/7</td>
+</tr>
+<tr>
+<td><strong>hostname</strong></td>
+<td>zeigt den Computernamen an</td>
+<td>XP/Vista/7</td>
+</tr>
+<tr>
+<td><strong>ICACLS</strong></td>
+<td>Anzeigen, Ändern, Sichern oder Wiederherstellen von ACLs für Dateien und Verzeichnisse</td>
+<td>7</td>
+</tr>
+<tr>
+<td><strong>if</strong></td>
+<td>Bedingungen in Batch Dateien</td>
+<td>XP/Vista/7</td>
+</tr>
+<tr>
+<td><strong>ipconfig</strong></td>
+<td>Zeigt IP-Netzwerkeinstellungen an</td>
+<td>XP/Vista/7</td>
+</tr>
+<tr>
+<td><strong>ipxroute</strong></td>
+<td>NWLink IPX-Routing und Quellrouting Steuerprogramm</td>
+<td>XP</td>
+</tr>
+<tr>
+<td><strong>irftp</strong></td>
+<td>sendet Dateien an die Infarotschnittstelle</td>
+<td>XP/Vista/7</td>
+</tr>
+<tr>
+<td><strong>label</strong></td>
+<td>Datenträgerbezeichnung ändern</td>
+<td>XP/Vista/7</td>
+</tr>
+<tr>
+<td><strong>lodctr</strong></td>
+<td>Aktualisiert Namen und Erklärungen für erweiterbare Leistungsindikatoren</td>
+<td>XP/Vista/7</td>
+</tr>
+<tr>
+<td><strong>logman</strong></td>
+<td>verwaltet den Dienst “Leistungsprotokolle und Warnungen”</td>
+<td>XP/Vista/7</td>
+</tr>
+<tr>
+<td><strong>lpq</strong></td>
+<td>zeigt den Status einer Remote-LPQ-Warteschlange an</td>
+<td>XP</td>
+</tr>
+<tr>
+<td><strong>lpr</strong></td>
+<td>sendet einen Druckauftrag an einen Netzwerkdrucker</td>
+<td>XP</td>
+</tr>
+<tr>
+<td><strong>mkdir oder md</strong></td>
+<td>Verzeichnis erstellen</td>
+<td>XP/Vista/7</td>
+</tr>
+<tr>
+<td><strong>mmc</strong></td>
+<td>startet die Management Console</td>
+<td>XP/Vista/7</td>
+</tr>
+<tr>
+<td><strong>mode</strong></td>
+<td>konfiguriert Schnittstellen/Geräte (Geschwindigkeit, Parity, ..) im system</td>
+<td>XP/Vista/7</td>
+</tr>
+<tr>
+<td><strong>more</strong></td>
+<td>zeigt Daten seitenweise auf dem Bildschirm an</td>
+<td>XP/Vista/7</td>
+</tr>
+<tr>
+<td><strong>mountvol</strong></td>
+<td>Zuweisung oder löschen von Laufwerksbuchstaben / Mountpunkten</td>
+<td>XP/Vista/7</td>
+</tr>
+<tr>
+<td><strong>move</strong></td>
+<td>verschieben und umbennen von Dateien und Ordner</td>
+<td>XP/Vista/7</td>
+</tr>
+<tr>
+<td><strong>OpenFiles</strong></td>
+<td>Zeigt Dateien, die von Remotebenutzern zur Dateifreigabe geöffnet wurden an</td>
+<td>7</td>
+</tr>
+<tr>
+<td><strong>msiexec</strong></td>
+<td>msi-Packete installieren</td>
+<td>XP/Vista/7</td>
+</tr>
+<tr>
+<td><strong>nbstat</strong></td>
+<td>Zeigt TCP/IP Verbindungen an, die NBT (NetBIOS über TCP/IP) verwenden</td>
+<td>XP/Vista/7</td>
+</tr>
+<tr>
+<td><strong>net</strong></td>
+<td>Netzwerkservices verwalten, anzeigen z.B. net use zeigt aktuell verbundene Laufwerke</td>
+<td>XP/Vista/7</td>
+</tr>
+<tr>
+<td><strong>netsh</strong></td>
+<td>Netzwerkkomponenten über cmd konfigurieren steuern anzeigen</td>
+<td>XP/Vista/7</td>
+</tr>
+<tr>
+<td><strong>netstat</strong></td>
+<td>zeigt TCP IP Verbindungen und deren Status an</td>
+<td>XP/Vista/7</td>
+</tr>
+<tr>
+<td><strong>nslookup</strong></td>
+<td>DNS Server abfragen</td>
+<td>XP/Vista/7</td>
+</tr>
+<tr>
+<td><strong>ntbackup</strong></td>
+<td>NTBackup über CommandLine / Silent starten</td>
+<td>XP</td>
+</tr>
+<tr>
+<td><strong>ntsd</strong></td>
+<td>Application Debugger</td>
+<td>XP</td>
+</tr>
+<tr>
+<td><strong>pagefileconfig</strong></td>
+<td>Auslagerungsdatei konfigurieren (mit cscript auführen)</td>
+<td>XP</td>
+</tr>
+<tr>
+<td><strong>path</strong></td>
+<td>legt den Suchpfad für cmd-Befehle fest, bzw. zeigt diese an</td>
+<td>XP/Vista/7</td>
+</tr>
+<tr>
+<td><strong>pathping</strong></td>
+<td>testet die Verbindung zu einer bestimmten IP-Adresse und zeigt die einzelnen Hops bis zur Zieladresse (ähnlich tracert)</td>
+<td>XP/Vista/7</td>
+</tr>
+<tr>
+<td><strong>pause</strong></td>
+<td>stop die Ausführung einer Batch-Datei und schreibt: Drücken Sie eine beliebige Taste …</td>
+<td>XP/Vista/7</td>
+</tr>
+<tr>
+<td><strong>pentnt</strong></td>
+<td>zeigt ob der Computer den Intel&trade; Pentium Floating Point Devision error hat bzw. deaktiviert die Gleitkommahardware und aktiviert die Gleitkommaemulation</td>
+<td>XP</td>
+</tr>
+<tr>
+<td><strong>perfmon</strong></td>
+<td>startet den Performence Monitor (Programm: Leistung)</td>
+<td>XP/Vista/7</td>
+</tr>
+<tr>
+<td><strong>ping</strong></td>
+<td>testet eine Verbindung zu einem anderen Rechner / Gerät</td>
+<td>XP/Vista/7</td>
+</tr>
+<tr>
+<td><strong>popd</strong></td>
+<td>wechselt zu dem Verzeichnis dass mit Phusd gespeichert wurde</td>
+<td>XP/Vista/7</td>
+</tr>
+<tr>
+<td><strong>print</strong></td>
+<td>druckt eine Textdatei</td>
+<td>XP/Vista/7</td>
+</tr>
+<tr>
+<td><strong>prncnfg</strong></td>
+<td>konfiguriert Konfigurationsinformationen zu einem Drucker oder zeigt sie an. (starten mit cscript)</td>
+<td>XP</td>
+</tr>
+<tr>
+<td><strong>prndrvr</strong></td>
+<td>Druckertreiber hinzufügen, löschen, anzeigen (starten mit cscript)</td>
+<td>XP</td>
+</tr>
+<tr>
+<td><strong>prnjobs</strong></td>
+<td>PrintJobs anhalten, anzeigen, wiederholen (starten mit cscript)</td>
+<td>XP</td>
+</tr>
+<tr>
+<td><strong>prnmngr</strong></td>
+<td>Drucker oder Druckerverbindungen hinzufügen, Standarddrucker festlegen (starten mit cscript)</td>
+<td>XP</td>
+</tr>
+<tr>
+<td><strong>prnport</strong></td>
+<td>Druckjobs erstellen, löschen oder auflisten (starten mit cscript)</td>
+<td>XP</td>
+</tr>
+<tr>
+<td><strong>prnqctl</strong></td>
+<td>druckt eine Testseite pausiert oder setzt einen Druckjob fort löscht die Druckerwarteschlange</td>
+<td>XP</td>
+</tr>
+<tr>
+<td><strong>prompt</strong></td>
+<td>ändert die Eingabeaufforderung</td>
+<td>XP/Vista/7</td>
+</tr>
+<tr>
+<td><strong>pushd</strong></td>
+<td>sichert das aktuelle Verzeichnis für die Verwendung mit popd</td>
+<td>XP/Vista/7</td>
+</tr>
+<tr>
+<td><strong>rasdial</strong></td>
+<td>Einwahlverbindungen über die Command Line aufbauen</td>
+<td>XP/Vista/7</td>
+</tr>
+<tr>
+<td><strong>rcp</strong></td>
+<td>kopiert Dateien auf Computer bzw. von Comptern, die den RCP-Dienst ausführen</td>
+<td>XP</td>
+</tr>
+<tr>
+<td><strong>recover</strong></td>
+<td>stelt lesbare Daten von einem beschädigten Datenträger wieder her</td>
+<td>XP/Vista/7</td>
+</tr>
+<tr>
+<td><strong>reg</strong></td>
+<td>Registrierungseinträge hinzufügen lesen importieren exportieren</td>
+<td>XP/Vista/7</td>
+</tr>
+<tr>
+<td><strong>regsvr32</strong></td>
+<td>dll Dateien registrieren</td>
+<td>XP/Vista/7</td>
+</tr>
+<tr>
+<td><strong>relog</strong></td>
+<td>Leistungsindikatorenprotokolle neu erstellen</td>
+<td>XP/Vista/7</td>
+</tr>
+<tr>
+<td><strong>rem</strong></td>
+<td>nach rem stehende Befehle in einer Batchdatei werden als Kommentare angesehen und werden nicht verarbeitet</td>
+<td>XP/Vista/7</td>
+</tr>
+<tr>
+<td><strong>rename</strong></td>
+<td>benennt Dateien um</td>
+<td>XP/Vista/7</td>
+</tr>
+<tr>
+<td><strong>replace</strong></td>
+<td>ersetzt Dateien</td>
+<td>XP/Vista/7</td>
+</tr>
+<tr>
+<td><strong>reset session</strong></td>
+<td>offene Terminal Sitzungen trennen</td>
+<td>XP/Vista/7</td>
+</tr>
+<tr>
+<td><strong>rexec</strong></td>
+<td>fürht Befehle auf Remote Computern aus, auf denen der RESEC-Dienst aktiv ist</td>
+<td>XP</td>
+</tr>
+<tr>
+<td><strong>rmdir</strong></td>
+<td>löscht ein Verzeichnis</td>
+<td>XP/Vista/7</td>
+</tr>
+<tr>
+<td><strong>rd</strong></td>
+<td>löscht ein Verzeichnis</td>
+<td>XP/Vista/7</td>
+</tr>
+<tr>
+<td><strong>route</strong></td>
+<td>anzeigen der Netzwerk-Routingtabelle, hinzufügen von statischen Routen</td>
+<td>XP/Vista/7</td>
+</tr>
+<tr>
+<td><strong>robocopy</strong></td>
+<td>Erweitertes kopieren von Dateien und Verzeichnissen</td>
+<td>7</td>
+</tr>
+<tr>
+<td><strong>rsh</strong></td>
+<td>führt Befehle auf Remotehosts aus, auf denen der RSH-Dienst aktiv ist</td>
+<td>XP</td>
+</tr>
+<tr>
+<td><strong>rsm</strong></td>
+<td>verwalten und steuern von Wechselmedien</td>
+<td>XP</td>
+</tr>
+<tr>
+<td><strong>runas</strong></td>
+<td>Programme als ein anderer Benutzer starten</td>
+<td>XP/Vista/7</td>
+</tr>
+<tr>
+<td><strong>sc</strong></td>
+<td>Command Line Programm dass mit dem NT Service Controller und Services kommuniziert</td>
+<td>XP/Vista/7</td>
+</tr>
+<tr>
+<td><strong>schtasks</strong></td>
+<td>geplante Tasks auf einem lokalen oder Remotecomputer erstellen, ändern, löschen, ausführen, beenden ersetzt at.exe</td>
+<td>XP/Vista/7</td>
+</tr>
+<tr>
+<td><strong>secedit</strong></td>
+<td>MS eigener Security Editor: ermöglicht Berechtigungen zu überprüfen anhand Vorlagen zu vergleichen bzw. die Vorlagen anzuwenden</td>
+<td>XP/Vista/7</td>
+</tr>
+<tr>
+<td><strong>set</strong></td>
+<td>setzt oder löscht Umgebungsvariablen für die CMD.exe</td>
+<td>XP/Vista/7</td>
+</tr>
+<tr>
+<td><strong>setlocal</strong></td>
+<td>Änderungen der Umgebung sind nach dem “Setlocal” Befehl nur auf die Batchdatei bezogen. um die ursprünglichen Einstellungen zurückzusezten wird der Befehl Endlocal verwendet oder die Batchdatei wird beendet</td>
+<td>XP/Vista/7</td>
+</tr>
+<tr>
+<td><strong>shift</strong></td>
+<td>verändert die Position ersetzbarer Parameter in einem Batchprogramm</td>
+<td>XP/Vista/7</td>
+</tr>
+<tr>
+<td><strong>shutdown</strong></td>
+<td>Computer abmelden, neustarten, ausschalten</td>
+<td>XP/Vista/7</td>
+</tr>
+<tr>
+<td><strong>sort</strong></td>
+<td>sortiert die Bildschirmausgabe</td>
+<td>XP/Vista/7</td>
+</tr>
+<tr>
+<td><strong>start</strong></td>
+<td>startet ein eigenes Fenster um ein bestimmtes Programm oder einen Befehl auszuführen</td>
+<td>XP/Vista/7</td>
+</tr>
+<tr>
+<td><strong>subst</strong></td>
+<td>weist einem Pfad eine Laufwerksbezeichnung zu</td>
+<td>XP/Vista/7</td>
+</tr>
+<tr>
+<td><strong>systeminfo</strong></td>
+<td>allgemeine Informationen über die Systemkonfiguraton abfragen: z.b. Anmeldeserver, installierte Hotfixes Netzwerkeinstellungen</td>
+<td>XP/Vista/7</td>
+</tr>
+<tr>
+<td><strong>sfc</strong></td>
+<td>überprüft alle geschützten Systemdateien und ersetzt falsche Versionen mit Microsoft-Originalversionen</td>
+<td>XP/Vista/7</td>
+</tr>
+<tr>
+<td><strong>taskkill</strong></td>
+<td>kann Prozesse beenden</td>
+<td>XP/Vista/7</td>
+</tr>
+<tr>
+<td><strong>tasklist</strong></td>
+<td>zeigt Anwendungen und zugehörige Tasks bzw. Prozesse (PID)</td>
+<td>XP/Vista/7</td>
+</tr>
+<tr>
+<td><strong>tcmsetup</strong></td>
+<td>Richtet den Telefonieclient ein</td>
+<td>XP/Vista/7</td>
+</tr>
+<tr>
+<td><strong>telnet</strong></td>
+<td>Telnetverbindungen aufbauen</td>
+<td>XP/Vista/7</td>
+</tr>
+<tr>
+<td><strong>tftp</strong></td>
+<td>mittels TFTP Dateien zu einem TFTP Server übertragen</td>
+<td>XP</td>
+</tr>
+<tr>
+<td><strong>time</strong></td>
+<td>stellt die Systemzeit oder zeigt sie an</td>
+<td>XP/Vista/7</td>
+</tr>
+<tr>
+<td><strong>timeout</strong></td>
+<td>wartet eine beliebige Zeit</td>
+<td>7</td>
+</tr>
+<tr>
+<td><strong>title</strong></td>
+<td>legt den Fenstertitel für das Eingabeaufforderungsfenster fest</td>
+<td>XP/Vista/7</td>
+</tr>
+<tr>
+<td><strong>tracerpt</strong></td>
+<td>aus einer binären Ablaufverfolungsdatei (etl) eine lesbare Reportdatei erzeugen die etl Datei kann mit Protokolle der Ablaufverfolgung des Windows Performance Monitors generiert werden</td>
+<td>XP/Vista/7</td>
+</tr>
+<tr>
+<td><strong>tracert</strong></td>
+<td>Routenverfolgung ähnlich pathping</td>
+<td>XP/Vista/7</td>
+</tr>
+<tr>
+<td><strong>tree</strong></td>
+<td>zeigt die Ordnerstruktur grafisch an</td>
+<td>XP/Vista/7</td>
+</tr>
+<tr>
+<td><strong>type</strong></td>
+<td>zeigt den Inhalt von Textdateien an</td>
+<td>XP/Vista/7</td>
+</tr>
+<tr>
+<td><strong>typeperf</strong></td>
+<td>schreibt Leistungsindikatorendaten in die Befehlszeile oder Protokolldatei</td>
+<td>XP/Vista/7</td>
+</tr>
+<tr>
+<td><strong>unlodctr</strong></td>
+<td>löscht Namen und Erklärungen für erweiterbare Leistungsindikatoren</td>
+<td>XP/Vista/7</td>
+</tr>
+<tr>
+<td><strong>ver</strong></td>
+<td>zeigt die Betriebssystem Version an</td>
+<td>XP/Vista/7</td>
+</tr>
+<tr>
+<td><strong>verify</strong></td>
+<td>legt die Überwachung, ob Dateien korrekt auf den Datenträger geschrieben werden, fest</td>
+<td>XP/Vista/7</td>
+</tr>
+<tr>
+<td><strong>vol</strong></td>
+<td>zeigt die Bezeichnung und Seriennummer eines Datenträgers an</td>
+<td>XP/Vista/7</td>
+</tr>
+<tr>
+<td><strong>vssadmin</strong></td>
+<td>Befehlszeilenprogramm des Volumeschattenkopie-Dienstes (Volume Shadow Copy Service)</td>
+<td>XP/Vista/7</td>
+</tr>
+<tr>
+<td><strong>w32tm</strong></td>
+<td>Zeitsyncronisation, Zeitserver, Zeitzone einstellen</td>
+<td>XP/Vista/7</td>
+</tr>
+<tr>
+<td><strong>WMIC</strong></td>
+<td>(Windows Management Instrumentation Commandline) Tool mit dem die Klassen der WMI-Bibliothek ohne Programmierkenntnisse einfach in der Command Line ausgenützt werden können.</td>
+<td>XP/Vista/7</td>
+</tr>
+<tr>
+<td><strong>xcopy</strong></td>
+<td>verbessertes copy</td>
+<td>XP/Vista/7</td>
+</tr>
+</tbody>
+</table>
+
+  <hr>
+<div class="md-source-file">
+  <small>
+    
+      Last update:
+      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">February 2, 2023</span>
+      
+        <br>
+        Created:
+        <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">February 2, 2023</span>
+      
+    
+  </small>
+</div>
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+        </div>
+        
+          <a href="#" class="md-top md-icon" data-md-component="top" hidden>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8v12Z"/></svg>
+            Back to top
+          </a>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+    <div class="md-copyright__highlight">
+      Copyright &copy; 2022 Robin Hermann
+    </div>
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+        <div class="md-social">
+  
+    
+    
+    <a href="https://github.com/onzack" target="_blank" rel="noopener" title="ONZACK on GitHub" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><!--! Font Awesome Free 6.2.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc.--><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/></svg>
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.indexes", "navigation.top", "navigation.tracking", "navigation.tabs", "search.highlight", "search.share", "search.suggest"], "search": "../../assets/javascripts/workers/search.db81ec45.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.6df46069.min.js"></script>
+      
+    
+  </body>
+</html>

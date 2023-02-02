@@ -1,0 +1,51 @@
+/* make side wider */
+.md-grid {
+    max-width: 1800px;
+  }
+
+/* remove Git repo infobox in the top right corner */
+.md-header__source {
+  display: none;
+}
+
+/* [data-md-color-scheme="light"] {
+  --md-primary-fg-color:        #1b1b22;
+  --md-primary-fg-color--light: #ffffff;
+  --md-primary-fg-color--dark:  #1b1b22;
+  --md-default-bg-color:        #ffffff;
+}
+
+[data-md-color-scheme="dark"] {
+  --md-primary-fg-color:        #d67770;
+  --md-primary-fg-color--light: #ffffff;
+  --md-primary-fg-color--dark:  #1b1b22;
+  --md-default-bg-color:        #1b1b22;
+}*/ 
+
+
+/* disable scrollbar because it looks not great with the header */
+::-webkit-scrollbar {
+  display: none;
+}
+
+/* custom scrollbar */
+/*
+::-webkit-scrollbar {
+  width: 20px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #d6dee1;
+  border-radius: 20px;
+  border: 6px solid transparent;
+  background-clip: content-box;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: #a8bbbf;
+}
+*/
