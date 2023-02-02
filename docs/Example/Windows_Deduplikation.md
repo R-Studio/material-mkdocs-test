@@ -1,4 +1,4 @@
-## Dedup
+# Dedup
 
 ### Aktive Deduping-Jobs anzeigen
 
